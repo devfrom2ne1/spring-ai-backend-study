@@ -19,19 +19,15 @@
 ---
 
 ## 🛠 Tech Stack
-* **Framework**: Spring Boot 3.x, Spring AI
-* **Language**: Java 17+
-* **Vector DB**: (사용하신 DB명을 적어주세요. 예: Milvus, PGVector)
-* **LLM**: (예: OpenAI gpt-4o, Anthropic Claude 3.5)
-* **Build Tool**: Gradle (또는 Maven)
+* **Framework**: Spring Boot 3.3.11, Spring AI
+* **Language**: Java 21
+* **Vector DB**: PGVector
+* **LLM**: Gemini
+* **Build Tool**: Gradle
 
 ---
 
 ## 🚀 Getting Started
-
-### Prerequisites
-* Java 17 이상 설치
-* API Key 설정 (OpenAI 등)
 
 ### Installation
 ```bash
