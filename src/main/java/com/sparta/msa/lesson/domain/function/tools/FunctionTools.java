@@ -18,7 +18,7 @@ public class FunctionTools {
 
   @Tool(description = "특정 도시의 현재 날씨 정보를 조회합니다")
   public WeatherResponse getWeather(WeatherRequest request) {
-    log.info("날씨 조회: {}", request.getCity());
+    log.info("[FunctionTools] 날씨 조회: {}", request.getCity());
 
     Random random = new Random();
     int temperature = 10 + random.nextInt(20);
@@ -35,7 +35,7 @@ public class FunctionTools {
 
   @Tool(description = "두 숫자의 사칙연산을 수행합니다")
   public CalculatorResponse calculator(CalculatorRequest request) {
-    log.info("계산: {} {} {}", request.getA(), request.getOperation(), request.getB());
+    log.info("[FunctionTools] 계산: {} {} {}", request.getA(), request.getOperation(), request.getB());
 
     double result = switch (request.getOperation()) {
       case "add" -> request.getA() + request.getB();
@@ -57,7 +57,7 @@ public class FunctionTools {
 
   @Tool(description = "현재 날짜와 시간을 반환합니다")
   public CurrentTimeResponse getCurrentTime() {
-    log.info("현재 시간 조회");
+    log.info("[FunctionTools] 현재 시간 조회");
 
     LocalDateTime now = LocalDateTime.now();
     return CurrentTimeResponse.builder()
